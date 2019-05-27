@@ -85,6 +85,8 @@ export default class HomeList extends Component {
 				<FlatList
 					data={this.state.list}
 					renderItem={({item}) => <Lista data={item} navigation={this.props.navigation} />}
+
+					keyExtractor = { (item, index) => index.toString() }
 				/>
 			</View>
 		);

@@ -32,6 +32,8 @@ export default class HomeProducts extends Component {
 				<FlatList
 					data={this.state.list}
 					renderItem={({item})=> <ProductItem data={item} /> }
+
+					keyExtractor = { (item, index) => index.toString() }
 				/>
 			</View>
 		);

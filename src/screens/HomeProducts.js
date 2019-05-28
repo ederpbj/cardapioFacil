@@ -13,7 +13,21 @@ export default class HomeProducts extends Component {
 	static navigationOptions = ({navigation}) => ({
 		title:navigation.state.params.title,
 		tabBarLabel:'Home',
-		tabBarIcon:({focused, tintColor}) => {
+
+		//Teste
+		
+		tabBarOptions:{
+			showIcon:true,
+			showLabel:true,
+			activeTintColor:'#FF0000'
+		},
+		
+		tabBarIcon:() => (
+			<Image source={require('../assets/images/contato_azul.png')} style={styles.icone} />
+		)
+		//<
+
+/* 		tabBarIcon:({focused, tintColor}) => {
 			if(focused) {
 				return (
 					<Image source={require('../assets/images/home_azul.png')} style={styles.icone} />
@@ -23,7 +37,7 @@ export default class HomeProducts extends Component {
 					<Image source={require('../assets/images/home_preto.png')} style={styles.icone} />
 				);
 			}
-		}
+		} */
 	});
 
 	render() {

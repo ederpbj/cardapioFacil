@@ -24,7 +24,8 @@ const AppNavigator = createBottomTabNavigator({
 }, {
 	tabBarPosition:'bottom',
 	tabBarOptions:{
-		showIcon:true
+    showIcon:true,
+    showLabel:true
 	}
 });
 

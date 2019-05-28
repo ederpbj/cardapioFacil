@@ -12,6 +12,17 @@ const AppNavigator = createStackNavigator({
 	HomeProducts:{
 		screen:HomeProducts
 	}
-});
+},
+//Teste
+{
+  tabBarPosition:'top',
+  animationEnable:true,
+  initialRouteName:'HomeList',
+  tabBarOptions:{
+    showIcon:true,
+    showLabel:true,
+		activeTintColor:'#FF0000'
+	}}
+);
 
 export default createAppContainer(AppNavigator);

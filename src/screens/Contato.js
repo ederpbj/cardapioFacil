@@ -5,6 +5,14 @@ export default class Contato extends Component {
 
 	static navigationOptions = {
 		tabBarLabel:'Contato',
+		//Teste
+		tabBarOptions:{
+			showIcon:true,
+			showLabel:true,
+			activeTintColor:'#FF0000'
+		},
+		//<
+
 		tabBarIcon:({focused, tintColor}) => {
 			if(focused) {
 				return (
